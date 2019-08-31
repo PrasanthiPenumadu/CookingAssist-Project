@@ -113,6 +113,13 @@ public class InitDao implements CommandLineRunner {
     recipeRepository.save(new Recipe("9", "Prasanthi",  "BananaWalnutMuffins", "Nutty Healthy Banana Muffins ",
             ingredientListBWMfins, 3000, 1800, stepsBWMfins));
 
+    List<java.lang.String> stepsMixedFruitSmoothie = Arrays.asList("Put all the ingredients in a blender and process until smooth",
+            "Pour into glasses and serve.");
+    List<Ingredient> ingredientListMFSmoothie = Arrays.asList(new Ingredient("Bananas", "2", "Sliced"),
+            new Ingredient("Vanilla Yoghurt", "1", "cup"), new Ingredient("Sugar", "1", "teaSpoon"),
+            new Ingredient("Honey", "2", "TableSpoons"), new Ingredient("Frozen Berries", "2", "Cups"));
+    recipeRepository.save(new Recipe("10", "Prasanthi",  "MixedFruitSmoothie", "Refreshing Healthy Smoothie ",
+            ingredientListMFSmoothie, 3000, 1800, stepsMixedFruitSmoothie));
 
   }
 }
